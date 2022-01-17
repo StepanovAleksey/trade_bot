@@ -9,8 +9,6 @@ import { DataService } from 'src/services/data.service';
 export class AppComponent {
   title = 'clientApp';
   constructor(private dataSrv: DataService) {
-    this.dataSrv.getData().subscribe((data) => {
-      this.title = data;
-    });
+    this.dataSrv.getData().subscribe((data) => {});
   }
 }
